@@ -2,14 +2,14 @@
 /**
  * The template for displaying the footer.
  *
- * Contains the closing of the #content div and all content after
+ * Contains the closing of the #container div and all content after
  *
  * @package o2theme
  */
 
 ?>
 
-	</div><!-- #content -->
+	</div><!-- #container -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
