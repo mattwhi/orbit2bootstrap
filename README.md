@@ -27,7 +27,7 @@
 <p>Enjoy this package and build something amazing</p>
 
 <h5>History</h5>
-<p>This is theme is based on _S WordPress starter theme with their basic SASS removed and replaced with Bootstrap.  I started this project as this is what I wanted from a WordPress starter theme, I was unable to find anything which matched my requirements to built this for my personal developments</p>
+<p>This is theme is based on _S WordPress starter theme with their basic SASS removed and replaced with Bootstrap.  I started this project as this is what I wanted from a WordPress starter theme, I was unable to find anything which matched my requirements so built this for my personal developments</p>
 
 <p>This project is subject to continual inprovements, if you feel there is something missing please feel free to add to this to create a brilliant Bootstrap WordPress starter</p>
 
