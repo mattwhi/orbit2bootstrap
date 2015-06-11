@@ -1,7 +1,8 @@
 /* custom styles for Orbit2 Bootstrap theme*/
-
+* {
+	color:#879296;
+}
 /*Header Styles*/
-
 .skip-link {
 	display:none;
 }
@@ -10,11 +11,6 @@
 		header {
 		}
 	}
-.front-page {
-	.slider {
-		margin-bottom:20px;
-	}
-}
 
 /*Navigation*/
 .navbar {
@@ -63,3 +59,23 @@
 		}
 	}
 }
+
+/*Front page CSS*/
+.front-page {
+	.slider {
+		margin-bottom:20px;
+	}
+	.thumbnail {
+		text-align: center;
+		border:none;
+			.btn-default {
+				background-color: $blue-base;
+				color:#fff;
+				&:hover {
+					@include transition(all, 0.5s, ease-in-out);
+					background-color: $blue-dark;
+				}
+			}
+		}
+	}
+

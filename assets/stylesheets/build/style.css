@@ -7086,6 +7086,10 @@ button.close {
   }
 }
 /* custom styles for Orbit2 Bootstrap theme*/
+* {
+  color: #879296;
+}
+
 /*Header Styles*/
 .skip-link {
   display: none;
@@ -7093,10 +7097,6 @@ button.close {
 
 #page.container-fluid {
   border-top: #018EBB solid 1px;
-}
-
-.front-page .slider {
-  margin-bottom: 20px;
 }
 
 /*Navigation*/
@@ -7144,6 +7144,24 @@ button.close {
   .navbar ul.navbar-nav li a:hover {
     border-width: 2px;
   }
+}
+
+/*Front page CSS*/
+.front-page .slider {
+  margin-bottom: 20px;
+}
+.front-page .thumbnail {
+  text-align: center;
+  border: none;
+}
+.front-page .thumbnail .btn-default {
+  background-color: #018EBB;
+  color: #fff;
+}
+.front-page .thumbnail .btn-default:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: #24c9fe;
 }
 
 /*# sourceMappingURL=style.css.map */
