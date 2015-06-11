@@ -84,22 +84,23 @@ module.exports = function(grunt) {
                 },
                 files: {
                         'assets/javascripts/plugins.min.js': [
-                        'assets/javascripts/source/plugins.js',
-                        'assets/javascripts/vendor/navigation.js',
-                        'assets/javascripts/vendor/skip-link-focus-fix.js',
+                        'assets/javascripts/source/jquery.parallax.js',
+                        'assets/javascripts/source/parallax.js',
+                        //'assets/javascripts/vendor/navigation.js',
+                        //'assets/javascripts/vendor/skip-link-focus-fix.js',
                         // 'assets/js/vendor/yourplugin/yourplugin.js',
                     ]
                 }
             },
             main: {
                 options: {
-                    sourceMap: 'assets/js/main.js.map',
+                    sourceMap: 'assets/javascripts/main.js.map',
                     sourceMappingURL: 'main.js.map',
                     sourceMapPrefix: 2
                 },
                 files: {
-                    'assets/js/main.min.js': [
-                        'assets/js/source/main.js'
+                    'assets/javascripts/main.min.js': [
+                        'assets/javascripts/source/main.js'
                     ]
                 }
             }
@@ -174,12 +175,13 @@ module.exports = function(grunt) {
                         expand:true,
                         dot: true,
                         cwd: '',
-                        dest: 'dist',
+                        dest: '../myTestTheme',
                         src: [
                             'assets/images{,*/}*.{png,jpg,gif}',
                             'assets/javascripts{,*/}*.min.js',
                             'assets/fonts/bootstrap{,*/}*.*',
                             'languages{,*/}*.*',
+                            'option-tree/**',
                             'template-parts{,*/}*.php',
                             'inc{,*/}*.php',
                             'layouts{,*/}*.php',

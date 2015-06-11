@@ -12,36 +12,53 @@
 
 get_header(); ?>
 
-	<div id="primary" class="row">
+	<div id="primary" class="row front-page">
 		
 		<main id="main" class="site-main" role="main">
-			
-			<div class="col-md-8">	
-				
-				<?php while ( have_posts() ) : the_post(); ?>
+				<div class="slider">
+					<?php putRevSlider( "homepage" ) ?>
+				</div>
+			<div class="container">
+				<div class="row">
+					  <div class="col-sm-6 col-md-4">
+					    <div class="thumbnail">
+					      <img src="..." alt="...">
+					      <div class="caption">
+					        <h3>Thumbnail label</h3>
+					        <p>...</p>
+					        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+					      </div>
+					    </div>
+					  </div>
 
-					<?php get_template_part( 'template-parts/content', 'page' ); ?>
+					<div class="col-sm-6 col-md-4">
+					    <div class="thumbnail">
+					      <img src="..." alt="...">
+					      <div class="caption">
+					        <h3>Thumbnail label</h3>
+					        <p>...</p>
+					        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+					      </div>
+					    </div>
+					  </div>
 
-					<?php
-						// If comments are open or we have at least one comment, load up the comment template.
-						if ( comments_open() || get_comments_number() ) :
-							comments_template();
-						endif;
-					?>
-
-				
-				<?php endwhile; // End of the loop. ?>
-			</div>
-
-			<div class="col-md-4">
-
-				<?php get_sidebar(); ?>
-
-			</div>
-
+					<div class="col-sm-6 col-md-4">
+					    <div class="thumbnail">
+					      <img src="..." alt="...">
+					      <div class="caption">
+					        <h3>Thumbnail label</h3>
+					        <p>...</p>
+					        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+					      </div>
+					    </div>
+					  </div>
+				</div>
+				<div class="row">
+					<div class="well well-lg">...</div>
+				</div>
+			</div>	
 		</main><!-- #main -->
 
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

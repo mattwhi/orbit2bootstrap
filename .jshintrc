@@ -12,8 +12,8 @@
     "undef": true,
     "browser": true,
     "trailing": true,
-    "jquery": true,
-    "curly": true,
+    "jquery": false,
+    "curly": false,
     "supernew": true,
     "globals": {
         "Backbone": true,

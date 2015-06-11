@@ -17,19 +17,7 @@
 						<?php endif; ?>
 				</a>
 			</div>
-			<div class="social-header navbar-text">			
-		<ul class="social-header">
-				<?php
-			if ( function_exists( 'ot_get_option' ) ) {
-			$socialIcons = ot_get_option( 'social_icons', array() );
-			if ( ! empty( $socialIcons ) ) {
-			foreach( $socialIcons as $socialIcon ) {
-			echo '<li><a class="' . $socialIcon['socialClass'] . '" href="' . $socialIcon['socialUrl'] . '"><i class="' . $socialIcon['socialFontAwesome'] . '"></i></a></li>';
-						}
-					}
-				}
-				?>
-		</ul>
+			<div class="social-header navbar-text">
 		</div> 
 				<div class="collapse navbar-collapse navHeaderCollapse">
 					<?php

@@ -5,3 +5,61 @@
 .skip-link {
 	display:none;
 }
+#page.container-fluid {
+	border-top:$blue-base solid 1px;
+		header {
+		}
+	}
+.front-page {
+	.slider {
+		margin-bottom:20px;
+	}
+}
+
+/*Navigation*/
+.navbar {
+	.navbar-toggle {
+		position: absolute;
+		right:0;
+		top:25px;
+		background-color:$blue-light;
+		.icon-bar {
+			background-image: url('assets/images/icon-bar.png')
+		}
+	}
+	.navbar-inner {
+		.navbar-text {
+		margin-left: 0;
+		}
+	}
+	margin-bottom:0;
+	ul.navbar-nav {
+			background-color:$blue-light;
+			li {
+			text-align: center;
+			a{
+				color:$blue-base;
+				font-weight: 600;
+				border-bottom:#fff solid 1px;
+					&:hover {
+						@include transition(all, 0.5s, ease-in-out);
+						color:$blue-dark;
+						background-color:#fff;
+						border-bottom:$blue-dark solid 1px;
+						border-width:1px;
+					}	
+				}
+			}
+		@media (min-width: $screen-sm-min) {
+				background-color:#fff;
+			li {
+				padding-top: 8%;
+				a{
+					&:hover{
+						border-width:2px;
+					}
+				}
+			}
+		}
+	}
+}
