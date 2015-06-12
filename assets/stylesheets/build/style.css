@@ -7099,9 +7099,60 @@ button.close {
   border-top: #018EBB solid 1px;
 }
 
+.cover {
+  position: fixed;
+  background: #fff;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100000000;
+}
+.cover .load {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.cover .load .spinner {
+  border-left: 3px solid rgba(26, 187, 156, 0.15);
+  border-right: 3px solid rgba(26, 187, 156, 0.15);
+  border-top: 3px solid rgba(26, 187, 156, 0.15);
+  border-bottom: 3px solid #fff;
+}
+.cover .load .spinner {
+  height: 36px;
+  width: 36px;
+  position: relative;
+  -webkit-animation: spin .8s infinite linear;
+  animation: spin .8s infinite linear;
+  border-left: 3px solid rgba(26, 187, 156, 0.15);
+  border-right: 3px solid rgba(26, 187, 156, 0.15);
+  border-bottom: 3px solid rgba(26, 187, 156, 0.15);
+  border-top: 3px solid rgba(26, 187, 156, 0.8);
+  border-radius: 100%;
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 /*Navigation*/
 .navbar {
   margin-bottom: 0;
+}
+.navbar.navbar-fixed-top {
+  background-color: #fff;
+  opacity: 0.9;
+  border-top: #018EBB solid 1px;
+  display: none;
 }
 .navbar .navbar-toggle {
   position: absolute;
@@ -7150,15 +7201,50 @@ button.close {
 .front-page .slider {
   margin-bottom: 20px;
 }
-.front-page .thumbnail {
+.front-page .thumbnail-wrapper .th-holder.one, .front-page .thumbnail-wrapper .th-holder.two, .front-page .thumbnail-wrapper .th-holder.three {
+  display: none;
+  opacity: 0;
+}
+.front-page .thumbnail-wrapper .th-holder.one {
+  left: -200px;
+}
+.front-page .thumbnail-wrapper .th-holder.two {
+  top: -200px;
+}
+.front-page .thumbnail-wrapper .th-holder.three {
+  right: -200px;
+}
+.front-page .thumbnail-wrapper .thumbnail {
   text-align: center;
   border: none;
 }
-.front-page .thumbnail .btn-default {
+.front-page .thumbnail-wrapper .thumbnail .btn-default {
   background-color: #018EBB;
   color: #fff;
 }
-.front-page .thumbnail .btn-default:hover {
+.front-page .thumbnail-wrapper .thumbnail .btn-default:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: #24c9fe;
+}
+.front-page .callout.parallax {
+  text-align: center;
+  padding: 100px 0;
+  background: url(assets/images/cityscape-taxi.jpg) fixed no-repeat center top;
+  background-size: cover;
+}
+.front-page .callout.parallax h2, .front-page .callout.parallax p {
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+.front-page .callout.parallax p {
+  font-size: 1.25em;
+}
+.front-page .callout.parallax .btn-lg, .front-page .callout.parallax .btn-group-lg > .btn {
+  background-color: #018EBB;
+  color: #fff;
+}
+.front-page .callout.parallax .btn-lg:hover, .front-page .callout.parallax .btn-group-lg > .btn:hover {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   background-color: #24c9fe;

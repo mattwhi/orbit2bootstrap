@@ -11,9 +11,56 @@
 		header {
 		}
 	}
+.cover {
+    position: fixed;
+	background:#fff;
+    top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:100000000;
+		.load {
+			width: 36px;
+			height:36px;
+			position:absolute;
+			top:50%;
+			left:50%;
+				.spinner {
+					border-left: 3px solid rgba(26,187,156,.15);
+					border-right: 3px solid rgba(26,187,156,.15);
+					border-top: 3px solid rgba(26,187,156,.15);
+					border-bottom: 3px solid #fff;	
+					}
+				.spinner {
+				  	height: 36px;
+				  	width: 36px;
+				  	position: relative;
+				  	-webkit-animation: spin .8s infinite linear;
+				  	-moz-animation: spin .8s infinite linear;
+				  	-o-animation: spin .8s infinite linear;
+				  	animation: spin .8s infinite linear;
+				  	border-left: 3px solid rgba(26,187,156,.15);
+				 	border-right: 3px solid rgba(26,187,156,.15);
+				  	border-bottom: 3px solid rgba(26,187,156,.15);
+				  	border-top: 3px solid rgba(26,187,156,.8);
+				  	border-radius: 100%;
+				}
+			}
+		}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
 
 /*Navigation*/
 .navbar {
+	&.navbar-fixed-top {
+		background-color:#fff;
+		opacity: 0.9;
+		border-top:$blue-base solid 1px;
+		display:none;
+	}
 	.navbar-toggle {
 		position: absolute;
 		right:0;
@@ -25,14 +72,14 @@
 	}
 	.navbar-inner {
 		.navbar-text {
-		margin-left: 0;
+			margin-left: 0;
 		}
 	}
 	margin-bottom:0;
 	ul.navbar-nav {
 			background-color:$blue-light;
 			li {
-			text-align: center;
+				text-align: center;
 			a{
 				color:$blue-base;
 				font-weight: 600;
@@ -64,11 +111,49 @@
 .front-page {
 	.slider {
 		margin-bottom:20px;
-	}
-	.thumbnail {
-		text-align: center;
-		border:none;
-			.btn-default {
+		}
+	.thumbnail-wrapper {
+		.th-holder {
+			&.one, &.two, &.three {
+				display: none;
+				opacity:0;
+			}
+			&.one {
+				left:-200px;
+			}
+			&.two {
+				top:-200px;
+			}
+			&.three {
+				right:-200px;
+			}
+		}
+		.thumbnail {
+			text-align: center;
+			border:none;
+				.btn-default {
+					background-color: $blue-base;
+					color:#fff;
+					&:hover {
+						@include transition(all, 0.5s, ease-in-out);
+						background-color: $blue-dark;
+					}
+				}
+			}
+		}
+		.callout.parallax {
+			text-align: center;
+			padding:100px 0;
+			background: url(assets/images/cityscape-taxi.jpg) fixed no-repeat center top;
+			background-size:cover;
+			h2,p {
+				color: #fff;
+				text-shadow: 1px 1px 1px #000;
+			}
+			p {
+				font-size: 1.25em;
+			}
+			.btn-lg {
 				background-color: $blue-base;
 				color:#fff;
 				&:hover {
@@ -78,4 +163,5 @@
 			}
 		}
 	}
+
 

@@ -249,6 +249,15 @@ function custom_theme_options() {
             'choices' => array()
           ),
           array(
+            'id'      => '3_col_class',
+            'label'   => 'Class for Fancy show to work',
+            'desc'    => 'Enter a alpha number e.g one.',
+            'std'     => '',
+            'type'    => 'text',
+            'class'   => '',
+            'choices' => array()
+          ),
+          array(
             'id'      => '3_col_button',
             'label'   => 'Button Text',
             'desc'    => 'Enter the button Text.',
@@ -268,6 +277,58 @@ function custom_theme_options() {
             ),
           array(
             'id'      => '3_col_description',
+            'label'   => 'Description',
+            'desc'    => 'This text is used to add fancy captions in the slider.',
+            'std'     => '',
+            'type'    => 'textarea',
+            'class'   => '',
+            'choices' => array()
+            )
+          )
+      ),
+      array(
+        'id'          => 'callout',
+        'label'       => 'Callout',
+        'desc'        => '',
+        'std'         => '',
+        'type'        => 'list-item',
+        'section'     => 'homepage_settings',
+        'rows'        => '',
+        'post_type'   => '',
+        'taxonomy'    => '',
+        'min_max_step'=> '0,1',
+        'class'       => '',
+        'choices'     => array(),
+        'settings'    => array(
+          array(
+            'id'      => 'callout_link',
+            'label'   => 'Link to Post',
+            'desc'    => 'Enter the posts url.',
+            'std'     => '',
+            'type'    => 'text',
+            'class'   => '',
+            'choices' => array()
+          ),
+          array(
+            'id'      => 'callout_button',
+            'label'   => 'Button Text',
+            'desc'    => 'Enter the button Text.',
+            'std'     => '',
+            'type'    => 'text',
+            'class'   => '',
+            'choices' => array()
+          ),
+          array(
+            'id'      => 'callout_header',
+            'label'   => 'Header',
+            'desc'    => '',
+            'std'     => '',
+            'type'    => 'text',
+            'class'   => '',
+            'choices' => array()
+            ),
+          array(
+            'id'      => 'callout_description',
             'label'   => 'Description',
             'desc'    => 'This text is used to add fancy captions in the slider.',
             'std'     => '',

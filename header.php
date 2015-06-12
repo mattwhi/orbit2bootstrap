@@ -19,6 +19,11 @@
 </head>
 
 <body <?php body_class(); ?>>
+<div class="cover">
+	<div class="load">
+    	<div class="spinner"></div>
+    </div>	
+</div>
 <div id="page" class="container-fluid">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'o2theme' ); ?></a>
 
