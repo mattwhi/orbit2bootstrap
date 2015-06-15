@@ -2,7 +2,6 @@
 	//alternates the feature section 
 	$( ".col-md-7:odd" ).addClass( "col-md-push-5" );
 	$( ".col-md-5:odd" ).addClass( "col-md-pull-7" );
-
 	$('.blog-entry').hover(function() {
 		$(this).find('article').fadeToggle(500);
 	});
@@ -10,45 +9,24 @@
 	$(window).load(function(){
     	$('.cover').delay(1000).fadeOut(1000);
     });
-    //Convert Nav to fixed on scroll
-    // $(window).bind('scroll', function () {
-    //     if ($(window).scrollTop() > 110) {
-    //         $('.navbar').removeClass('navbar-static-top');
-    //         $('.navbar').addClass('navbar-fixed-top');
-    //         $('.navbar-fixed-top').slideDown(2000);
-    //     } else {
-    //         $('.navbar').removeClass('navbar-fixed-top');
-    //         $('.navbar').addClass('navbar-static-top');
-    //     }
-    // });
-    //thumbnail visable
-    $(window).bind('scroll', function () {
-       if ($(window).scrollTop() > 110) {
-            $('.th-holder.one')
-            .delay(2000)
-            .animate({
-                opacity: 1,
-                left: "+=200",
-                height: "toggle"
-                }, 3000);
-            $('.th-holder.two')
-            .delay(2000)
-            .animate({
-                opacity: 1,
-                top: "+=200",
-                height: "toggle"
-                }, 3000);
-                    
-            $('.th-holder.three')
-            .delay(2000)
-            .animate({
-                opacity: 1,
-                right: "+=200",
-                height: "toggle"
-                }, 3000);
-            }            
-            $(this).unbind("scroll");
-        });
+
+    $(window).scroll(function(event){
+        var y = $(this).scrollTop();
+        if (y >= 300) {
+            $('.thumbnail1').fadeIn(200).addClass('animate');
+            $('.thumbnail2').fadeIn(200).addClass('animate');
+            $('.thumbnail3').fadeIn(200).addClass('animate');
+        }
+        // if (y <= 300) {
+        //     $('.th-holder.one').removeClass('animate').fadeOut(400);
+        //     $('.th-holder.two').removeClass('animate').fadeOut(400);
+        //     $('.th-holder.three').removeClass('animate').fadeOut(400);
+        // }
+        if (y >= 600) {
+            $('.callout.parallax').fadeIn(800);
+        }
+    });
+
     $.fn.parallax = function(options) {
         var windowHeight = $(window).height();
         // Establish default settings

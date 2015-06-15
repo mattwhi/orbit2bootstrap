@@ -24,8 +24,10 @@ get_header(); ?>
 	        if ( function_exists( 'ot_get_option' ) ) {
 	        	$threecols = ot_get_option( '3_col', array() );
 			        if ( ! empty( $threecols ) ) {
+			        	$i = 0;
 			          foreach( $threecols as $threecol ) {
-			            echo '<div class="col-sm-6 col-md-4 th-holder ' . $threecol['3_col_class'] . '">
+			          	$i++;
+			            echo '<div class="col-sm-6 col-md-4 th-holder thumbnail' . $i . '">
 								<div class="thumbnail">
 								  <img src="' . $threecol['3_col_image'] . '" alt="' . $threecol['3_col_title'] . '" width="180" height="180">
 									  <div class="caption">
