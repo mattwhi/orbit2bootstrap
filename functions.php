@@ -105,6 +105,36 @@ function o2theme_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer One', 'o2theme' ),
+		'id'            => 'sidebar-2',
+		'description'   => 'This sidebar appears in the footer',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Two', 'o2theme' ),
+		'id'            => 'sidebar-3',
+		'description'   => 'This sidebar appears in the footer',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Three', 'o2theme' ),
+		'id'            => 'sidebar-4',
+		'description'   => 'This sidebar appears in the footer',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
 }
 add_action( 'widgets_init', 'o2theme_widgets_init' );
 

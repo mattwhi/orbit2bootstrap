@@ -164,4 +164,55 @@
 		}
 	}
 
-
+/*Footer styles*/
+footer {
+	border-top: 1px solid $blue-dark;
+	background-color: $blue-base;
+	background-image: url('assets/images/footer-cityscape.png');
+	background-repeat: no-repeat;
+	background-position: 50% 100%;
+	.row.social {
+		border-bottom: 1px dotted $blue-dark;
+		.lead {
+			font-size: 3em;
+			color:$blue-dark;
+			float: left;
+			padding-right: 20px;
+			margin-bottom: 0;
+		}
+	}
+	ul.social-header {
+		li {
+			float:left;
+			font-size: 3em;
+			padding:0 15px;
+			a {	
+				i {
+					color:$blue-dark;
+					&:hover {
+						@include transition(all, 0.5s, ease-in-out);
+						color:$blue-dark;
+					}
+				}
+			}
+		}
+	}
+	.row {
+		padding:10px 0;
+		.widget, .textwidget, ul, li, a {
+			color:$blue-dark;
+		}
+		li {
+			list-style: none;
+		}
+	}
+	.site-info, .site-info a, .site-info span {
+		padding:5px 0;
+		text-align: center;
+		color:$blue-base;
+		background-color: $blue-dark;
+		&:hover {
+			color:$blue-dark;
+		}
+	}
+}
