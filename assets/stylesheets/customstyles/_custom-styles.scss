@@ -164,12 +164,23 @@
 				}
 			}
 		}
+		.featurette:nth-of-type(even) {
+			position:relative;
+			right:200px;
+			opacity: 0;
+		}
+		.featurette:nth-of-type(odd) {
+			position:relative;
+			left:200px;
+			opacity: 0;
+		}
 	}
+/*Animation classes for front page*/
 .animate {
-	transition: 1s linear;
-	-moz-transition: 1s linear;
-	-webkit-transition: 1s linear;
-	-o-transition: 1s linear;
+	transition: 1s ease-in-out;
+	-moz-transition: 1s ease-in-out;
+	-webkit-transition: 1s ease-in-out;
+	-o-transition: 1s ease-in-out;
 }
 .thumbnail1.animate {
 	transform: translate(200px, 0);
@@ -183,6 +194,16 @@
 	opacity:1 !important;
 }
 .thumbnail3.animate {
+	transform: translate(-200px, 0);
+	backface-visibility: hidden;
+	opacity:1 !important;
+}
+.featurette:nth-of-type(even).animate {
+	transform: translate(200px, 0);
+	backface-visibility: hidden;
+	opacity:1 !important;
+}
+.featurette:nth-of-type(odd).animate {
 	transform: translate(-200px, 0);
 	backface-visibility: hidden;
 	opacity:1 !important;

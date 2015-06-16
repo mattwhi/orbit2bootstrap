@@ -66,7 +66,7 @@ get_header(); ?>
 }
 ?>
 <!-- START THE FEATURETTES -->
-<div class="container">
+<div class="container featurette-wrapper">
 <hr class="featurette-divider">
 <?php
   if ( function_exists( 'ot_get_option' ) ) {

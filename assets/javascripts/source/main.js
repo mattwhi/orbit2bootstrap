@@ -5,25 +5,30 @@
 	$('.blog-entry').hover(function() {
 		$(this).find('article').fadeToggle(500);
 	});
+
 	//page loader
 	$(window).load(function(){
     	$('.cover').delay(1000).fadeOut(1000);
     });
 
+    //3 column animation on front page
     $(window).scroll(function(event){
-        var y = $(this).scrollTop();
-        if (y >= 300) {
-            $('.thumbnail1').fadeIn(200).addClass('animate');
-            $('.thumbnail2').fadeIn(200).addClass('animate');
-            $('.thumbnail3').fadeIn(200).addClass('animate');
+        var y = $(this).scrollTop(); //grap the screen location
+        if (y >= 300) { //set the screen location to start the animation
+            //grap the css classes fade in and animate by adding css classes.
+            $('.thumbnail1,.thumbnail2, .thumbnail3')
+            .fadeIn(200)
+            .addClass('animate');
         }
-        // if (y <= 300) {
-        //     $('.th-holder.one').removeClass('animate').fadeOut(400);
-        //     $('.th-holder.two').removeClass('animate').fadeOut(400);
-        //     $('.th-holder.three').removeClass('animate').fadeOut(400);
-        // }
-        if (y >= 600) {
-            $('.callout.parallax').fadeIn(800);
+        //animate the parallax call out at a higher screen position
+        if (y >= 800) {
+            $('.callout.parallax')
+            .slideDown(800);
+        }
+        if (y >= 1200) {
+            $('.featurette:nth-of-type(odd), .featurette:nth-of-type(even)')
+            .fadeIn(200)
+            .addClass('animate');
         }
     });
 
