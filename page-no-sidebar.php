@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
+ * Template Name: No Side Bar
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -16,7 +16,7 @@ get_header(); ?>
 		
 		<main id="main" class="site-main row" role="main">
 			
-			<div class="col-md-8">	
+			<div class="col-md-12">	
 				
 				<?php while ( have_posts() ) : the_post(); ?>
 
@@ -31,12 +31,6 @@ get_header(); ?>
 
 				
 				<?php endwhile; // End of the loop. ?>
-			</div>
-
-			<div class="col-md-4">
-
-				<?php get_sidebar(); ?>
-
 			</div>
 
 		</main><!-- #main -->

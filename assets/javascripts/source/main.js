@@ -14,6 +14,7 @@
     //3 column animation on front page
     $(window).scroll(function(event){
         var y = $(this).scrollTop(); //grap the screen location
+        console.log(y)
         if (y >= 300) { //set the screen location to start the animation
             //grap the css classes fade in and animate by adding css classes.
             $('.thumbnail1,.thumbnail2, .thumbnail3')
@@ -25,9 +26,14 @@
             $('.callout.parallax')
             .slideDown(800);
         }
-        if (y >= 1200) {
+        if (y >= 1250) {
             $('.featurette:nth-of-type(odd), .featurette:nth-of-type(even)')
             .fadeIn(200)
+            .addClass('animate');
+        }
+        if (y >= 2439) {
+            $('.contact')
+            .fadeIn(1000)
             .addClass('animate');
         }
     });

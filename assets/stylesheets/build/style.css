@@ -9611,6 +9611,31 @@ button.close {
   left: 200px;
   opacity: 0;
 }
+.front-page .contact {
+  display: none;
+  opacity: 0;
+}
+.front-page .contact form {
+  font-size: 1.4em;
+}
+.front-page .contact form input[type=text], .front-page .contact form input[type=email] {
+  width: 100%;
+  padding: 15px 5px 15px 10px;
+  border: 4px solid #24c9fe;
+}
+.front-page .contact form textarea {
+  width: 100%;
+  padding: 10px 0 0 10px;
+  border: 4px solid #24c9fe;
+}
+.front-page .contact form input[type=submit] {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: #008eba;
+  color: #fff;
+  font-size: 1.4em;
+}
 
 /*Animation classes for front page*/
 .animate {
@@ -9660,6 +9685,12 @@ button.close {
   -webkit-transform: translate(-200px, 0);
       -ms-transform: translate(-200px, 0);
           transform: translate(-200px, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  opacity: 1 !important;
+}
+
+.contact.animate {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   opacity: 1 !important;

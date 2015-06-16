@@ -24,11 +24,11 @@
     	<div class="spinner"></div>
     </div>	
 </div>
-<div id="page" class="container-fluid">
+<div id="page" class="container">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'o2theme' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
 		<?php get_template_part( 'inc/navigation'); ?>	
 	</header><!-- #masthead -->
 </div>
-	<div id="content" class="container-fluid">
+	<div id="content" class="">

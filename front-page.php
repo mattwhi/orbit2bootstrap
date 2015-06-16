@@ -48,19 +48,18 @@ get_header(); ?>
 	  $callouts = ot_get_option( 'callout', array() );
 	  if ( ! empty( $callouts ) ) {
       foreach( $callouts as $callout ) {
-	echo '<div class="callout parallax parallax-window">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-				
-					<h2>' . $callout['callout_header'] . '</h2>
-					<p>' . $callout['callout_description'] . '</p>
-					<p><a class="btn btn-info btn-lg" href="' . $callout['callout_link'] . '" role="button">' . $callout['callout_button'] . '</a></p>
-
-				</div>
+echo '
+<div class="callout parallax parallax-window">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>' . $callout['callout_header'] . '</h2>
+				<p>' . $callout['callout_description'] . '</p>
+				<p><a class="btn btn-info btn-lg" href="' . $callout['callout_link'] . '" role="button">' . $callout['callout_button'] . '</a></p>
 			</div>
 		</div>
-	</div>';
+	</div>
+</div>';
 		}
 	}
 }
@@ -74,21 +73,26 @@ get_header(); ?>
       if ( ! empty( $features ) ) {
         foreach( $features as $feature ) {
           echo '
-		      <div class="row featurette">
-		        <div class="col-md-7">
-		          <h2 class="featurette-heading">' . $feature['feature_header'] . '<span class="text-muted">&#160;' . $feature['feature_sub_header'] . '</span></h2>
-		          <p class="lead">' . $feature['feature_description'] . '</p>
-		        </div>
-		        <div class="col-md-5">
-		          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="' . $feature['feature_image'] . '" data-holder-rendered="true">
-		        </div>
-		      </div>
-  			<hr class="featurette-divider">';
+<div class="row featurette">
+<div class="col-md-7">
+  <h2 class="featurette-heading">' . $feature['feature_header'] . '<span class="text-muted">&#160;' . $feature['feature_sub_header'] . '</span></h2>
+  <p class="lead">' . $feature['feature_description'] . '</p>
+</div>
+<div class="col-md-5">
+  <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="' . $feature['feature_image'] . '" data-holder-rendered="true">
+</div>
+</div>
+<hr class="featurette-divider">';
 	 		}
 		}
 	}
 ?>
-			</div>	
+			</div>
+
+	<div class="container contact">
+		<?php echo do_shortcode( '[contact-form-7 id="60" title="Contact form 1"]' ); ?>
+	</div>
+
 		</main><!-- #main -->
 
 	</div><!-- #primary -->
