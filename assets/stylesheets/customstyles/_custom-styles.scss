@@ -113,7 +113,6 @@
 		margin-bottom:20px;
 		}
 	.thumbnail-wrapper {
-		min-height:480px;
 		.th-holder {
 			&.thumbnail1, &.thumbnail2, &.thumbnail3 {
 				display: none;
@@ -133,11 +132,19 @@
 			text-align: center;
 			border:none;
 				.btn-default {
+					opacity: 0.5;
 					background-color: $blue-base;
 					color:#fff;
 					&:hover {
 						@include transition(all, 0.5s, ease-in-out);
-						background-color: $blue-dark;
+						opacity: 1;
+					}
+				}
+				img {
+					opacity: 0.5;
+					&:hover {
+						@include transition(all, 0.5s, ease-in-out);
+						opacity: 1;
 					}
 				}
 			}
@@ -182,20 +189,25 @@
 				input[type=text], input[type=email] {
 					width: 100%;
 					padding:15px 5px 15px 10px;
-					border:4px solid $blue-dark;
+					border:1px solid $blue-dark;
 				}
 				textarea {
 					width:100%;
 					padding:10px 0 0 10px;
-					border:4px solid $blue-dark;
+					border:1px solid $blue-dark;
 				}
 				input[type=submit] {
 				  	width: 100%;
 				 	height: 40px;
-				  	border: none;
-				  	background-color: #008eba;
-				  	color: #fff;
+				  	border:1px solid $blue-dark;
+				  	background-color: #fff;
+				  	color: $blue-base;
 				  	font-size: 1.4em;
+				  	&:hover {
+				  		@include transition(all, 0.5s, ease-in-out);
+				  		background-color: $blue-dark;
+				  		color:#fff;
+				  	}
 				}
 			}
 		}

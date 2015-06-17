@@ -16,7 +16,7 @@ get_header(); ?>
 		
 <main id="main" class="site-main" role="main">
 	<div class="slider">
-		<?php putRevSlider( "homepage" ) ?>
+		<?php putRevSlider( "kenburnsslider" ) ?>
 	</div>
 <div class="container">
 	<div class="row thumbnail-wrapper">
@@ -29,7 +29,7 @@ get_header(); ?>
 			          	$i++;
 			            echo '<div class="col-sm-6 col-md-4 th-holder thumbnail' . $i . '">
 								<div class="thumbnail">
-								  <img src="' . $threecol['3_col_image'] . '" alt="' . $threecol['3_col_title'] . '" width="180" height="180">
+								  <img src="' . $threecol['3_col_image'] . '" alt="' . $threecol['3_col_title'] . '" width="100" height="100">
 									  <div class="caption">
 									    <h3>' . $threecol['3_col_header'] . '</h3>
 									    	<p>' . $threecol['3_col_description'] . '</p>

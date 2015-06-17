@@ -31,7 +31,7 @@
             .fadeIn(200)
             .addClass('animate');
         }
-        if (y >= 2439) {
+        if (y >= 2000) {
             $('.contact')
             .fadeIn(1000)
             .addClass('animate');

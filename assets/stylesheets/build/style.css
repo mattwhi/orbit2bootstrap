@@ -9549,9 +9549,6 @@ button.close {
 .front-page .slider {
   margin-bottom: 20px;
 }
-.front-page .thumbnail-wrapper {
-  min-height: 480px;
-}
 .front-page .thumbnail-wrapper .th-holder.thumbnail1, .front-page .thumbnail-wrapper .th-holder.thumbnail2, .front-page .thumbnail-wrapper .th-holder.thumbnail3 {
   display: none;
   opacity: 0;
@@ -9570,13 +9567,22 @@ button.close {
   border: none;
 }
 .front-page .thumbnail-wrapper .thumbnail .btn-default {
+  opacity: 0.5;
   background-color: #018EBB;
   color: #fff;
 }
 .front-page .thumbnail-wrapper .thumbnail .btn-default:hover {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  background-color: #24c9fe;
+  opacity: 1;
+}
+.front-page .thumbnail-wrapper .thumbnail img {
+  opacity: 0.5;
+}
+.front-page .thumbnail-wrapper .thumbnail img:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  opacity: 1;
 }
 .front-page .callout.parallax {
   display: none;
@@ -9621,20 +9627,26 @@ button.close {
 .front-page .contact form input[type=text], .front-page .contact form input[type=email] {
   width: 100%;
   padding: 15px 5px 15px 10px;
-  border: 4px solid #24c9fe;
+  border: 1px solid #24c9fe;
 }
 .front-page .contact form textarea {
   width: 100%;
   padding: 10px 0 0 10px;
-  border: 4px solid #24c9fe;
+  border: 1px solid #24c9fe;
 }
 .front-page .contact form input[type=submit] {
   width: 100%;
   height: 40px;
-  border: none;
-  background-color: #008eba;
-  color: #fff;
+  border: 1px solid #24c9fe;
+  background-color: #fff;
+  color: #018EBB;
   font-size: 1.4em;
+}
+.front-page .contact form input[type=submit]:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: #24c9fe;
+  color: #fff;
 }
 
 /*Animation classes for front page*/
