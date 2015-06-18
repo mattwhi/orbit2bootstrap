@@ -218,20 +218,20 @@
 	-moz-transition: 1s ease-in-out;
 	-webkit-transition: 1s ease-in-out;
 	-o-transition: 1s ease-in-out;
+	transform-style: perserve-3d;
 }
 .thumbnail1.animate {
-	transform: translate(200px, 0);
+	transform: translate3d(200px, 0, -120px) rotateY(360deg);
 	backface-visibility: hidden;
 	opacity:1 !important;
 }
 .thumbnail2.animate {
-	transform: translateY(200px);
-	-webkit-transform: translateY(200px);
+	transform: translate3d(0, 200px, 200px) rotateY(360deg);
 	backface-visibility: hidden;
 	opacity:1 !important;
 }
 .thumbnail3.animate {
-	transform: translate(-200px, 0);
+	transform: translate3d(-200px, 0, 120px) rotateY(360deg);
 	backface-visibility: hidden;
 	opacity:1 !important;
 }
