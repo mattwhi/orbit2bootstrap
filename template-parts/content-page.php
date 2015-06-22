@@ -6,12 +6,15 @@
  */
 
 ?>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+<section class="container-fluid">
+<header class="entry-header text-center">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
-
+</header><!-- .entry-header -->
+</section>
+<section class="container page-block">
+<div class="col-md-8">
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php
@@ -21,9 +24,5 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php edit_post_link( esc_html__( 'Edit', 'o2theme' ), '<span class="edit-link">', '</span>' ); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
 

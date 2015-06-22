@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
+ * Template Name: Contact Page
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -29,14 +29,18 @@ get_header(); ?>
 
 				
 				<?php endwhile; // End of the loop. ?>
-			</div>
 
-			<div class="col-md-4">
+				<?php echo do_shortcode( '[contact-form-7 id="60" title="Contact form 1"]' ); ?>
+			</div><!--Col-md-8 -->
 
-				<?php get_sidebar(); ?>
+				<div class="col-md-4">
 
-			</div>
+					<?php get_sidebar(); ?>
+
+				</div>
+
 			</section>
+
 		</main><!-- #main -->
 
 	</div><!-- #primary -->

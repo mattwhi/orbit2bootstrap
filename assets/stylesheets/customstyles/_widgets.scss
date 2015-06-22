@@ -1,0 +1,25 @@
+#secondary {
+	&.widget-area {
+		padding:0 20px;
+			.widget {
+				padding:0 0 10px 0;
+				ul {
+					padding:0;
+					li {
+						list-style: none;
+						a {
+							color:$blue-dark;
+						}
+					}
+				}
+			h1.widget-title {
+				margin-top:0;
+				font-size:1.4em;
+				text-transform: uppercase;
+				text-spacing:5px;
+				border-left:3px solid $blue-base;
+				padding-left: 5px;
+			}
+		}
+	}
+}

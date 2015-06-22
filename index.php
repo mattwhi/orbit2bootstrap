@@ -13,7 +13,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area container">
+	<div id="primary" class="content-area">
 		<main id="main" class="site-main row" role="main">
 			<div class="col-md-8">	
 		<?php if ( have_posts() ) : ?>

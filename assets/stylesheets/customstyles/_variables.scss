@@ -2,10 +2,15 @@
 $slabo: 'Slabo 13px', sans-serif;
 
 $blue-base:              #BED6D3 !default;
-$blue-darker:            lighten($blue-base, 13.5%) !default; // #222
-$blue-dark:              lighten($blue-base, 20%) !default;   // #333
+$blue-darker:            darken($blue-base, 13.5%) !default; // #222
+$blue-dark:              darken($blue-base, 20%) !default;   // #333
 $blue:                   lighten($blue-base, 33.5%) !default; // #555
 $blue-light:             lighten($blue-base, 46.7%) !default; // #777
 $blue-lighter:           lighten($blue-base, 93.5%) !default; // #eee
 
-$olive-opacity: 		rgba(190,214,211,0.5)
+$olive-opacity: 		rgba(190,214,211,0.5);
+$white-opacity: 		rgba(254,254,254,0.5);
+$black-opacity: 		rgba(0,0,0,0.5);
+
+$white-opacity-full: 		rgba(254,254,254,0);
+$black-opacity-full: 		rgba(0,0,0,0);
