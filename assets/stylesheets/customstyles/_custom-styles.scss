@@ -1,6 +1,7 @@
 /* custom styles for Orbit2 Bootstrap theme*/
 * {
 	color:#879296;
+	font-family:$slabo;
 }
 /*Header Styles*/
 .skip-link {
@@ -57,7 +58,10 @@
 .navbar {
 	&.navbar-fixed-top {
 		border-top:$blue-base solid 1px;
+<<<<<<< HEAD
 		background: rgba(254, 254, 254, 0.5); 
+=======
+>>>>>>> MW NEW Bits
 	}
 	.navbar-toggle {
 		position: absolute;
@@ -79,8 +83,8 @@
 				text-align: center;
 			a{
 				color:$blue-base;
-				font-weight: 600;
 				border-bottom:#fff solid 1px;
+				text-transform: uppercase !important;
 					&:hover {
 						@include transition(all, 0.5s, ease-in-out);
 						color:$blue-dark;
@@ -114,12 +118,33 @@
 .front-page {
 	.slider {
 		}
+		.about {
+			padding:25% 0;
+			h2 {
+				text-transform: uppercase;
+				letter-spacing: 12px;
+				padding-bottom:10%;
+			}
+		}
 	.thumbnail-wrapper {
+<<<<<<< HEAD
 		.container {
 			padding-top: 17.5%;
 			padding-bottom: 17.5%;
 		}
+=======
+		padding:25% 0;
+		height: 100%;
+		width: 100%;
+		top:0;
+		left:0;
+>>>>>>> MW NEW Bits
 		.th-holder {
+			border-right:1px solid $olive-opacity;
+			min-height: 200px;
+			&:last-child {
+				border-right:none;
+			}
 			&.thumbnail1, &.thumbnail2, &.thumbnail3 {
 				display: none;
 				opacity: 0;
@@ -135,6 +160,9 @@
 			}
 		}
 		.thumbnail {
+			h3 {
+				color:$blue-base;
+			}
 			text-align: center;
 			border:none;
 				.btn-default {
@@ -156,9 +184,13 @@
 			}
 		}
 		.callout.parallax {
+<<<<<<< HEAD
+=======
+			padding: 25% 0;
+			display: none;
+>>>>>>> MW NEW Bits
 			text-align: center;
-			padding:100px 0;
-			background: url(assets/images/cityscape-taxi.jpg) fixed no-repeat center top;
+			background: url(assets/images/apple_desktop-wallpaper-1920x1080.jpg) fixed no-repeat center top;
 			background-size:cover;
 			.container {
 				padding-top: 17.5%;
@@ -193,34 +225,60 @@
 		.contact {
 			display:none;
 			opacity: 0;
+<<<<<<< HEAD
 			.container {
 				padding-top: 17.5%;
 				padding-bottom: 17.5%;
+=======
+			h2 {
+				text-transform: uppercase;
+				letter-spacing: 12px;
+				padding-bottom:10%;
+>>>>>>> MW NEW Bits
 			}
 			form {
 				font-size: 1.4em;
 				input[type=text], input[type=email] {
 					width: 100%;
 					padding:15px 5px 15px 10px;
-					border:1px solid $blue-dark;
+					border:1px solid $blue-base;
 				}
 				textarea {
 					width:100%;
 					padding:10px 0 0 10px;
-					border:1px solid $blue-dark;
+					border:1px solid $blue-base;
 				}
 				input[type=submit] {
 				  	width: 100%;
 				 	height: 40px;
-				  	border:1px solid $blue-dark;
+				  	border:1px solid $blue-base;
 				  	background-color: #fff;
 				  	color: $blue-base;
 				  	font-size: 1.4em;
 				  	&:hover {
 				  		@include transition(all, 0.5s, ease-in-out);
-				  		background-color: $blue-dark;
+				  		background-color: $blue-base;
 				  		color:#fff;
 				  	}
+				}
+			}
+		}
+		.blog {
+			padding:25% 0;
+			text-align: center;
+			h2 {
+				text-transform: uppercase;
+				letter-spacing: 12px;
+				padding-bottom:10%;
+			}
+			img {
+				z-index: -1;
+			}
+			h1.entry-title {
+				font-size: 1em;
+				text-transform: uppercase;
+				a {
+					text-decoration:none;
 				}
 			}
 		}

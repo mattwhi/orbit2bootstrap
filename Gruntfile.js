@@ -86,6 +86,7 @@ module.exports = function(grunt) {
                         'assets/javascripts/plugins.min.js': [
                         'assets/javascripts/source/jquery.parallax.js',
                         'assets/javascripts/source/parallax.js',
+                        'assets/javascripts/source/noframework.waypoints.js',
                         //'assets/javascripts/vendor/navigation.js',
                         //'assets/javascripts/vendor/skip-link-focus-fix.js',
                         // 'assets/js/vendor/yourplugin/yourplugin.js',

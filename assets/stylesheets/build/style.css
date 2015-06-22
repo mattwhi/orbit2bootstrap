@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+@import url(http://fonts.googleapis.com/css?family=Slabo+13px);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -9436,6 +9437,7 @@ button.close {
 /* custom styles for Orbit2 Bootstrap theme*/
 * {
   color: #879296;
+  font-family: "Slabo 13px", sans-serif;
 }
 
 /*Header Styles*/
@@ -9444,7 +9446,7 @@ button.close {
 }
 
 #page.container-fluid {
-  border-top: #018EBB solid 1px;
+  border-top: #BED6D3 solid 1px;
 }
 
 .cover {
@@ -9497,14 +9499,20 @@ button.close {
   margin-bottom: 0;
 }
 .navbar.navbar-fixed-top {
+<<<<<<< HEAD
   border-top: #018EBB solid 1px;
   background: rgba(254, 254, 254, 0.5);
+=======
+  background-color: #fff;
+  opacity: 0.9;
+  border-top: #BED6D3 solid 1px;
+>>>>>>> MW NEW Bits
 }
 .navbar .navbar-toggle {
   position: absolute;
   right: 0;
   top: 25px;
-  background-color: #aceaff;
+  background-color: white;
 }
 .navbar .navbar-toggle .icon-bar {
   background-image: url("assets/images/icon-bar.png");
@@ -9512,20 +9520,26 @@ button.close {
 .navbar .navbar-inner .navbar-text {
   margin-left: 0;
 }
+<<<<<<< HEAD
+=======
+.navbar ul.navbar-nav {
+  background-color: white;
+}
+>>>>>>> MW NEW Bits
 .navbar ul.navbar-nav li {
   text-align: center;
 }
 .navbar ul.navbar-nav li a {
-  color: #018EBB;
-  font-weight: 600;
+  color: #BED6D3;
   border-bottom: #fff solid 1px;
+  text-transform: uppercase !important;
 }
 .navbar ul.navbar-nav li a:hover {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  color: #24c9fe;
+  color: #fdfdfd;
   background-color: #fff;
-  border-bottom: #24c9fe solid 1px;
+  border-bottom: #fdfdfd solid 1px;
   border-width: 1px;
 }
 @media (min-width: 768px) {
@@ -9551,6 +9565,28 @@ button.close {
   padding-top: 17.5%;
   padding-bottom: 17.5%;
 }
+.front-page .about {
+  padding: 25% 0;
+}
+.front-page .about h2 {
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  padding-bottom: 10%;
+}
+.front-page .thumbnail-wrapper {
+  padding: 25% 0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.front-page .thumbnail-wrapper .th-holder {
+  border-right: 1px solid rgba(190, 214, 211, 0.5);
+  min-height: 200px;
+}
+.front-page .thumbnail-wrapper .th-holder:last-child {
+  border-right: none;
+}
 .front-page .thumbnail-wrapper .th-holder.thumbnail1, .front-page .thumbnail-wrapper .th-holder.thumbnail2, .front-page .thumbnail-wrapper .th-holder.thumbnail3 {
   display: none;
   opacity: 0;
@@ -9568,9 +9604,12 @@ button.close {
   text-align: center;
   border: none;
 }
+.front-page .thumbnail-wrapper .thumbnail h3 {
+  color: #BED6D3;
+}
 .front-page .thumbnail-wrapper .thumbnail .btn-default {
   opacity: 0.5;
-  background-color: #018EBB;
+  background-color: #BED6D3;
   color: #fff;
 }
 .front-page .thumbnail-wrapper .thumbnail .btn-default:hover {
@@ -9587,9 +9626,13 @@ button.close {
   opacity: 1;
 }
 .front-page .callout.parallax {
+<<<<<<< HEAD
+=======
+  padding: 25% 0;
+  display: none;
+>>>>>>> MW NEW Bits
   text-align: center;
-  padding: 100px 0;
-  background: url(assets/images/cityscape-taxi.jpg) fixed no-repeat center top;
+  background: url(assets/images/apple_desktop-wallpaper-1920x1080.jpg) fixed no-repeat center top;
   background-size: cover;
 }
 .front-page .callout.parallax .container {
@@ -9604,13 +9647,13 @@ button.close {
   font-size: 1.25em;
 }
 .front-page .callout.parallax .btn-lg, .front-page .callout.parallax .btn-group-lg > .btn {
-  background-color: #018EBB;
+  background-color: #BED6D3;
   color: #fff;
 }
 .front-page .callout.parallax .btn-lg:hover, .front-page .callout.parallax .btn-group-lg > .btn:hover {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  background-color: #24c9fe;
+  background-color: #fdfdfd;
 }
 .front-page .featurette:nth-of-type(even) {
   position: relative;
@@ -9626,9 +9669,16 @@ button.close {
   display: none;
   opacity: 0;
 }
+<<<<<<< HEAD
 .front-page .contact .container {
   padding-top: 17.5%;
   padding-bottom: 17.5%;
+=======
+.front-page .contact h2 {
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  padding-bottom: 10%;
+>>>>>>> MW NEW Bits
 }
 .front-page .contact form {
   font-size: 1.4em;
@@ -9636,26 +9686,45 @@ button.close {
 .front-page .contact form input[type=text], .front-page .contact form input[type=email] {
   width: 100%;
   padding: 15px 5px 15px 10px;
-  border: 1px solid #24c9fe;
+  border: 1px solid #BED6D3;
 }
 .front-page .contact form textarea {
   width: 100%;
   padding: 10px 0 0 10px;
-  border: 1px solid #24c9fe;
+  border: 1px solid #BED6D3;
 }
 .front-page .contact form input[type=submit] {
   width: 100%;
   height: 40px;
-  border: 1px solid #24c9fe;
+  border: 1px solid #BED6D3;
   background-color: #fff;
-  color: #018EBB;
+  color: #BED6D3;
   font-size: 1.4em;
 }
 .front-page .contact form input[type=submit]:hover {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  background-color: #24c9fe;
+  background-color: #BED6D3;
   color: #fff;
+}
+.front-page .blog {
+  padding: 25% 0;
+  text-align: center;
+}
+.front-page .blog h2 {
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  padding-bottom: 10%;
+}
+.front-page .blog img {
+  z-index: -1;
+}
+.front-page .blog h1.entry-title {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+.front-page .blog h1.entry-title a {
+  text-decoration: none;
 }
 
 /*Animation classes for front page*/
@@ -9718,18 +9787,18 @@ button.close {
 
 /*Footer styles*/
 footer {
-  border-top: 1px solid #24c9fe;
-  background-color: #018EBB;
+  border-top: 1px solid #fdfdfd;
+  background-color: #BED6D3;
   background-image: url("assets/images/footer-cityscape.png");
   background-repeat: no-repeat;
   background-position: 50% 100%;
 }
 footer .row.social {
-  border-bottom: 1px dotted #24c9fe;
+  border-bottom: 1px dotted #fdfdfd;
 }
 footer .row.social .lead {
   font-size: 3em;
-  color: #24c9fe;
+  color: #fdfdfd;
   float: left;
   padding-right: 20px;
   margin-bottom: 0;
@@ -9740,18 +9809,18 @@ footer ul.social-header li {
   padding: 0 15px;
 }
 footer ul.social-header li a i {
-  color: #24c9fe;
+  color: #fdfdfd;
 }
 footer ul.social-header li a i:hover {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  color: #24c9fe;
+  color: #fdfdfd;
 }
 footer .row {
   padding: 10px 0;
 }
 footer .row .widget, footer .row .textwidget, footer .row ul, footer .row li, footer .row a {
-  color: #24c9fe;
+  color: #fdfdfd;
 }
 footer .row li {
   list-style: none;
@@ -9759,11 +9828,11 @@ footer .row li {
 footer .site-info, footer .site-info a, footer .site-info span {
   padding: 5px 0;
   text-align: center;
-  color: #018EBB;
-  background-color: #24c9fe;
+  color: #BED6D3;
+  background-color: #fdfdfd;
 }
 footer .site-info:hover, footer .site-info a:hover, footer .site-info span:hover {
-  color: #24c9fe;
+  color: #fdfdfd;
 }
 
 /*# sourceMappingURL=style.css.map */

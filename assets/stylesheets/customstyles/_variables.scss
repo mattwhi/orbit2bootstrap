@@ -1,6 +1,11 @@
-$blue-base:              #018EBB !default;
+@import url(http://fonts.googleapis.com/css?family=Slabo+13px);
+$slabo: 'Slabo 13px', sans-serif;
+
+$blue-base:              #BED6D3 !default;
 $blue-darker:            lighten($blue-base, 13.5%) !default; // #222
 $blue-dark:              lighten($blue-base, 20%) !default;   // #333
 $blue:                   lighten($blue-base, 33.5%) !default; // #555
 $blue-light:             lighten($blue-base, 46.7%) !default; // #777
 $blue-lighter:           lighten($blue-base, 93.5%) !default; // #eee
+
+$olive-opacity: 		rgba(190,214,211,0.5)
