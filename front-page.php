@@ -18,8 +18,9 @@ get_header(); ?>
 	<div class="slider">
 		<?php putRevSlider( "kenburnsslider" ) ?>
 	</div>
+<div class="thumbnail-wrapper">
 <div class="container">
-	<div class="row thumbnail-wrapper">
+	<div class="row">
 		<?php
 	        if ( function_exists( 'ot_get_option' ) ) {
 	        	$threecols = ot_get_option( '3_col', array() );
@@ -41,29 +42,33 @@ get_header(); ?>
 				}
 			}
 		?>
+		</div>
 	</div>
 </div>
 <!--Call to action -->
+<div class="callout parallax parallax-window">
+	<div class="container">
+		<div class="row">
 <?php if ( function_exists( 'ot_get_option' ) ) {
 	  $callouts = ot_get_option( 'callout', array() );
 	  if ( ! empty( $callouts ) ) {
       foreach( $callouts as $callout ) {
 echo '
-<div class="callout parallax parallax-window">
-	<div class="container">
-		<div class="row">
+		
 			<div class="col-md-12">
 				<h2>' . $callout['callout_header'] . '</h2>
 				<p>' . $callout['callout_description'] . '</p>
 				<p><a class="btn btn-info btn-lg" href="' . $callout['callout_link'] . '" role="button">' . $callout['callout_button'] . '</a></p>
 			</div>
-		</div>
-	</div>
-</div>';
+
+';
 		}
 	}
 }
 ?>
+		</div>
+	</div>
+</div>
 <!-- START THE FEATURETTES -->
 <div class="container featurette-wrapper">
 <hr class="featurette-divider">
@@ -87,14 +92,16 @@ echo '
 		}
 	}
 ?>
-			</div>
+</div>
 
-	<div class="container contact">
+<div class="contact">
+	<div class="container">
 		<?php echo do_shortcode( '[contact-form-7 id="60" title="Contact form 1"]' ); ?>
 	</div>
+</div>
 
-		</main><!-- #main -->
+</main><!-- #main -->
 
-	</div><!-- #primary -->
+</div><!-- #primary -->
 
 <?php get_footer(); ?>

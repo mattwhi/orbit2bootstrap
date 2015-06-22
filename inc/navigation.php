@@ -1,4 +1,4 @@
-<div class="navbar navbar-static-top">
+<div class="navbar navbar-fixed-top">
 <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>

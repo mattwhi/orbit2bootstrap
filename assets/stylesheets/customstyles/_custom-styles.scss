@@ -18,7 +18,7 @@
 	bottom:0;
 	left:0;
 	right:0;
-	z-index:100000000;
+	z-index:1;
 		.load {
 			width: 36px;
 			height:36px;
@@ -56,10 +56,8 @@
 /*Navigation*/
 .navbar {
 	&.navbar-fixed-top {
-		background-color:#fff;
-		opacity: 0.9;
 		border-top:$blue-base solid 1px;
-		display:none;
+		background: rgba(254, 254, 254, 0.5); 
 	}
 	.navbar-toggle {
 		position: absolute;
@@ -77,7 +75,6 @@
 	}
 	margin-bottom:0;
 	ul.navbar-nav {
-			background-color:$blue-light;
 			li {
 				text-align: center;
 			a{
@@ -94,7 +91,6 @@
 				}
 			}
 		@media (min-width: $screen-sm-min) {
-				background-color:#fff;
 			li {
 				padding-top: 8%;
 				a{
@@ -106,13 +102,23 @@
 		}
 	}
 }
-
+.cover-div {
+	position: fixed;
+	top:0;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+}
 /*Front page CSS*/
 .front-page {
 	.slider {
-		margin-bottom:20px;
 		}
 	.thumbnail-wrapper {
+		.container {
+			padding-top: 17.5%;
+			padding-bottom: 17.5%;
+		}
 		.th-holder {
 			&.thumbnail1, &.thumbnail2, &.thumbnail3 {
 				display: none;
@@ -150,11 +156,14 @@
 			}
 		}
 		.callout.parallax {
-			display: none;
 			text-align: center;
 			padding:100px 0;
 			background: url(assets/images/cityscape-taxi.jpg) fixed no-repeat center top;
 			background-size:cover;
+			.container {
+				padding-top: 17.5%;
+				padding-bottom: 17.5%;
+			}
 			h2,p {
 				color: #fff;
 				text-shadow: 1px 1px 1px #000;
@@ -184,6 +193,10 @@
 		.contact {
 			display:none;
 			opacity: 0;
+			.container {
+				padding-top: 17.5%;
+				padding-bottom: 17.5%;
+			}
 			form {
 				font-size: 1.4em;
 				input[type=text], input[type=email] {
@@ -220,32 +233,32 @@
 	-o-transition: 1s ease-in-out;
 	transform-style: perserve-3d;
 }
-.thumbnail1.animate {
+.animate.thumbnail1 {
 	transform: translate3d(200px, 0, -120px) rotateY(360deg);
 	backface-visibility: hidden;
 	opacity:1 !important;
 }
-.thumbnail2.animate {
+.animate.thumbnail2 {
 	transform: translate3d(0, 200px, 200px) rotateY(360deg);
 	backface-visibility: hidden;
 	opacity:1 !important;
 }
-.thumbnail3.animate {
+.animate.thumbnail3 {
 	transform: translate3d(-200px, 0, 120px) rotateY(360deg);
 	backface-visibility: hidden;
 	opacity:1 !important;
 }
-.featurette:nth-of-type(even).animate {
+.animate.featurette:nth-of-type(even) {
 	transform: translate(200px, 0);
 	backface-visibility: hidden;
 	opacity:1 !important;
 }
-.featurette:nth-of-type(odd).animate {
+.animate.featurette:nth-of-type(odd) {
 	transform: translate(-200px, 0);
 	backface-visibility: hidden;
 	opacity:1 !important;
 }
-.contact.animate {
+.animate.contact {
 	backface-visibility: hidden;
 	opacity:1 !important;
 }

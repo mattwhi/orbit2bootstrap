@@ -9454,7 +9454,7 @@ button.close {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 100000000;
+  z-index: 1;
 }
 .cover .load {
   width: 36px;
@@ -9497,10 +9497,8 @@ button.close {
   margin-bottom: 0;
 }
 .navbar.navbar-fixed-top {
-  background-color: #fff;
-  opacity: 0.9;
   border-top: #018EBB solid 1px;
-  display: none;
+  background: rgba(254, 254, 254, 0.5);
 }
 .navbar .navbar-toggle {
   position: absolute;
@@ -9513,9 +9511,6 @@ button.close {
 }
 .navbar .navbar-inner .navbar-text {
   margin-left: 0;
-}
-.navbar ul.navbar-nav {
-  background-color: #aceaff;
 }
 .navbar ul.navbar-nav li {
   text-align: center;
@@ -9534,9 +9529,6 @@ button.close {
   border-width: 1px;
 }
 @media (min-width: 768px) {
-  .navbar ul.navbar-nav {
-    background-color: #fff;
-  }
   .navbar ul.navbar-nav li {
     padding-top: 8%;
   }
@@ -9545,9 +9537,19 @@ button.close {
   }
 }
 
+.cover-div {
+  position: fixed;
+  top: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 /*Front page CSS*/
-.front-page .slider {
-  margin-bottom: 20px;
+.front-page .thumbnail-wrapper .container {
+  padding-top: 17.5%;
+  padding-bottom: 17.5%;
 }
 .front-page .thumbnail-wrapper .th-holder.thumbnail1, .front-page .thumbnail-wrapper .th-holder.thumbnail2, .front-page .thumbnail-wrapper .th-holder.thumbnail3 {
   display: none;
@@ -9585,11 +9587,14 @@ button.close {
   opacity: 1;
 }
 .front-page .callout.parallax {
-  display: none;
   text-align: center;
   padding: 100px 0;
   background: url(assets/images/cityscape-taxi.jpg) fixed no-repeat center top;
   background-size: cover;
+}
+.front-page .callout.parallax .container {
+  padding-top: 17.5%;
+  padding-bottom: 17.5%;
 }
 .front-page .callout.parallax h2, .front-page .callout.parallax p {
   color: #fff;
@@ -9620,6 +9625,10 @@ button.close {
 .front-page .contact {
   display: none;
   opacity: 0;
+}
+.front-page .contact .container {
+  padding-top: 17.5%;
+  padding-bottom: 17.5%;
 }
 .front-page .contact form {
   font-size: 1.4em;
@@ -9659,7 +9668,7 @@ button.close {
           transform-style: perserve-3d;
 }
 
-.thumbnail1.animate {
+.animate.thumbnail1 {
   -webkit-transform: translate3d(200px, 0, -120px) rotateY(360deg);
           transform: translate3d(200px, 0, -120px) rotateY(360deg);
   -webkit-backface-visibility: hidden;
@@ -9667,7 +9676,7 @@ button.close {
   opacity: 1 !important;
 }
 
-.thumbnail2.animate {
+.animate.thumbnail2 {
   -webkit-transform: translate3d(0, 200px, 200px) rotateY(360deg);
           transform: translate3d(0, 200px, 200px) rotateY(360deg);
   -webkit-backface-visibility: hidden;
@@ -9675,7 +9684,7 @@ button.close {
   opacity: 1 !important;
 }
 
-.thumbnail3.animate {
+.animate.thumbnail3 {
   -webkit-transform: translate3d(-200px, 0, 120px) rotateY(360deg);
           transform: translate3d(-200px, 0, 120px) rotateY(360deg);
   -webkit-backface-visibility: hidden;
@@ -9683,7 +9692,7 @@ button.close {
   opacity: 1 !important;
 }
 
-.featurette:nth-of-type(even).animate {
+.animate.featurette:nth-of-type(even) {
   -webkit-transform: translate(200px, 0);
       -ms-transform: translate(200px, 0);
           transform: translate(200px, 0);
@@ -9692,7 +9701,7 @@ button.close {
   opacity: 1 !important;
 }
 
-.featurette:nth-of-type(odd).animate {
+.animate.featurette:nth-of-type(odd) {
   -webkit-transform: translate(-200px, 0);
       -ms-transform: translate(-200px, 0);
           transform: translate(-200px, 0);
@@ -9701,7 +9710,7 @@ button.close {
   opacity: 1 !important;
 }
 
-.contact.animate {
+.animate.contact {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   opacity: 1 !important;

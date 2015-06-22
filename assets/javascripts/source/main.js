@@ -14,9 +14,9 @@
     //3 column animation on front page
     $(window).scroll(function(event){
         var y = $(this).scrollTop(); //grap the screen location
-        console.log(y)
+        console.log(y);
         if (y >= 300) { //set the screen location to start the animation
-            //grap the css classes fade in and animate by adding css classes.
+            //grap the css classes fade in and animate by adding css classes
             $('.thumbnail1,.thumbnail2, .thumbnail3')
             .fadeIn(200)
             .addClass('animate');
@@ -37,7 +37,17 @@
             .addClass('animate');
         }
     });
-
+    var limit = 60;
+    var start = 40;    
+    var moveBy = 1;    
+    var timer1 = setInterval(function() {  
+    $('#num').text(start);
+    $('.callout.parallax').css('background-position',start-'px 0') ;
+    start--;
+    if(start<0) {
+       clearTimeout(timer1);
+    }    
+},50);
     $.fn.parallax = function(options) {
         var windowHeight = $(window).height();
         // Establish default settings
